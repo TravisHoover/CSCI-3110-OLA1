@@ -41,12 +41,10 @@ class Student
 		void changeScore( const ScoreType, const int );
 		int  getScore( const ScoreType ) const;
 
-		//********************************************************************
-		//Add your functions here if necessary
-		//********************************************************************
+		void read(int x);
 
 	private:
-		std::string		m_id;		// Student ID
+		//std::string		m_id;		// Student ID
 		int				m_score[CATEGORY_NUM];
 						// m_score[CLA] is CLA score		
 						// m_score[OLA] is OLA score		
