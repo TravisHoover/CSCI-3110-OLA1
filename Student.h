@@ -11,46 +11,52 @@
  * of the class Student.
  */
 
-#ifndef __CSCI2170_STUDENT__
-#define __CSCI2170_STUDENT__
+#ifndef __CSCI3110_STUDENT__
+#define __CSCI3110_STUDENT__
 
+#include <string>
 #include <stdexcept>
+
 
 class Student
 {
-	public:
-		// The types of score. You can access the type or enumerators outside
-		// of the Student class scope by the following expressions:
-		//	Student::ScoreType              Student::CLA        Student::BONUS
-		enum ScoreType {CLA, OLA, QUIZ, HOMEWORK, EXAM, BONUS};
+public:
+	// The types of score. You can access the type or enumerators outside
+	// of the Student class scope by the following expressions:
+	//	Student::ScoreType              Student::CLA        Student::BONUS
+	enum ScoreType {CLA, OLA, QUIZ, HOMEWORK, EXAM, BONUS};
 
-		// To access the class constant outside of the Student class scope:
-		//	Student::CATEGORY_NUM
-		static const int CATEGORY_NUM = BONUS - CLA + 1;
+	// To access the class constant outside of the Student class scope:
+	//	Student::CATEGORY_NUM
+	static const int CATEGORY_NUM = BONUS - CLA + 1;
 
-		// default constructor. This is necessary since we define an array 
-		// of students in the class Roster
-		Student( void );
+	// default constructor. This is necessary since we define an array
+	// of students in the class Roster
+	Student( void );
 
-		//Accessor & mutator of m_id 
-		std::string getID( void ) const;
-		void setID( std::string ) throw(std::runtime_error);
+	//Accessor & mutator of m_id
+	std::string getID( void ) const;
+	void setID( std::string ) ;
 
-		//Accessor and mutator of m_score
-		//ScoreType indicates which score you want to access
-		void changeScore( const ScoreType, const int );
-		int  getScore( const ScoreType ) const;
+	//Accessor and mutator of m_score
+	//ScoreType indicates which score you want to access
+	void changeScore( const ScoreType, const int );
+	int  getScore( const ScoreType ) const;
 
-		void read(int x);
+	//********************************************************************
+	//Add your functions here if necessary
+	//********************************************************************
 
-	private:
-		//std::string		m_id;		// Student ID
-		int				m_score[CATEGORY_NUM];
-						// m_score[CLA] is CLA score		
-						// m_score[OLA] is OLA score		
-						// m_score[QUIZ] is QUIZ score		
-						// m_score[HOMEWORK] is HOMEWORK score		
-						// m_score[EXAM] is EXAM score		
-						// m_score[BONUS] is BONUS score		
+	static Student scores(int m_CLA, int m_OLA, int m_QUIZ, int m_HOMEWORK, int m_EXAM, int m_BONUS);
+
+private:
+	std::string		m_id;		// Student ID
+	int				m_score[CATEGORY_NUM];
+	// m_score[CLA] is CLA score
+	// m_score[OLA] is OLA score
+	// m_score[QUIZ] is QUIZ score
+	// m_score[HOMEWORK] is HOMEWORK score
+	// m_score[EXAM] is EXAM score
+	// m_score[BONUS] is BONUS score
 };
 #endif

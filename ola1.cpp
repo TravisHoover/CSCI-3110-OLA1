@@ -13,7 +13,7 @@ int main() {
 
     fstream myfile;
     myfile.open ("point.dat");
-    if(myfile.is_open) {
+    if(myfile) {
 
         getline(myfile, headers);
 
