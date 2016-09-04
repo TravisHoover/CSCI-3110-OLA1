@@ -1,13 +1,13 @@
 /*
  * File:	Student.h
  * Author:	Zhijiang Dong
- * Course:	CSCI 2170
+ * Course:	CSCI 3110
  * Instructor:	Zhijiang Dong
  * Date:	Oct. 06 2006
  *
- * Purpose: This file is a part of the 2nd open lab assignment, which 
- * includes Student.h, Student.cpp, Roster.h, Roster.cpp, 
- * and main.cpp. This file gives the full definition 
+ * Purpose: This file is a part of the 1st open lab assignment, which
+ * includes Student.h, Student.cpp, Roster.h, Roster.cpp,
+ * and main.cpp. This file gives the full definition
  * of the class Student.
  */
 
@@ -46,8 +46,6 @@ public:
 	//********************************************************************
 	//Add your functions here if necessary
 	//********************************************************************
-
-	static Student scores(int m_CLA, int m_OLA, int m_QUIZ, int m_HOMEWORK, int m_EXAM, int m_BONUS);
 
 private:
 	std::string		m_id;		// Student ID

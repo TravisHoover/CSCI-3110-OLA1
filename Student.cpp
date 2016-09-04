@@ -4,23 +4,16 @@
 
 #include "Student.h"
 #include <iostream>
-#include <string>
 
 using namespace std;
 
+void Student() {
 
-int main() {
-
-    Student Student1;
- cout << "Scores for student:";
+    class Student Student1();
+    cout << Student1;
     //implement way to output student id for the following scores to be displayed.
 
 
 
 
-
-
-
-
-
-}
+};
