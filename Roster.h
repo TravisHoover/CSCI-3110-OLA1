@@ -16,6 +16,7 @@
 
 #include <string>
 #include <stdexcept>
+#include <vector>
 #include "Student.h"
 
 class Roster

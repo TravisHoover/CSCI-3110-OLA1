@@ -3,4 +3,12 @@
 //
 
 #include "Roster.h"
+#include <vector>
 
+using namespace std;
+
+void readStudentRecord( std::string ) {
+
+
+
+}

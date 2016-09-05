@@ -32,7 +32,9 @@ public:
 
 	// default constructor. This is necessary since we define an array
 	// of students in the class Roster
-	Student( void );
+	Student(void);
+	Student(std::string m_id, int CLA, int OLA, int QUIZ, int HOMEWORK, int EXAM, int BONUS);
+	Student(std::string);
 
 	//Accessor & mutator of m_id
 	std::string getID( void ) const;
