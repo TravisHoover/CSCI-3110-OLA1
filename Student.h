@@ -42,8 +42,8 @@ public:
 
 	//Accessor and mutator of m_score
 	//ScoreType indicates which score you want to access
-	void changeScore( const ScoreType, const int );
-	int  getScore( const ScoreType ) const;
+	void changeScore( const int, const int );
+	int  getScore( const int ) const;
 
 	//********************************************************************
 	//Add your functions here if necessary
@@ -51,12 +51,12 @@ public:
 
 private:
 	std::string		m_id;		// Student ID
-	int				m_score[CATEGORY_NUM];
-	// m_score[CLA] is CLA score
-	// m_score[OLA] is OLA score
-	// m_score[QUIZ] is QUIZ score
-	// m_score[HOMEWORK] is HOMEWORK score
-	// m_score[EXAM] is EXAM score
-	// m_score[BONUS] is BONUS score
+
+	int m_scoreCLA;
+	int m_scoreOLA;
+	int m_scoreQUIZ;
+	int m_scoreHOMEWORK;
+	int m_scoreEXAM;
+	int m_scoreBONUS;
 };
 #endif

@@ -3,12 +3,24 @@
 //
 
 #include "Roster.h"
-#include <vector>
+#include <iostream>
 
 using namespace std;
+
+/*Roster::Roster(std::string courseName) {
+
+}
 
 void readStudentRecord( std::string ) {
 
 
 
 }
+
+int getStudentNum() {
+    //return m_studentNum;
+}
+
+void setStudentNum(int newIndex) {
+    //m_studentNum = newIndex;
+}*/

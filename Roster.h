@@ -35,15 +35,13 @@ public:
 	//		m_studentNum is the number of students read from the file
 	void readStudentRecord( std::string );
 
-	//*****************************************
-	//Add your functions here if necessary
-	//*****************************************
-
+	int getStudentNum(void) const;
+	static void setStudentNum(int);
 private:
 	static const int	MAX_NUM = 25;	// The maximum # of students of a class
 	// Class constant. All objects share the same copy
 	std::string			m_courseName;	// THe name of the course
-	int					  m_studentNum;	// Actual Student #
+	int					m_studentNum;	// Actual Student #
 	Student				m_students[MAX_NUM]; // The array of student objects
 };
 #endif

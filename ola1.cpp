@@ -11,11 +11,12 @@ int main() {
     fstream myfile;
     myfile.open("point.dat");
 
-    int studentIndex = 0;
+    int studentIndex = 1;
 
     //Ignore the first line of point.dat, it is just headers
     string ignoredLine;
     getline(myfile, ignoredLine);
+    cout << "\t" << ignoredLine << endl;
 
     //start while loop to cycle through point.dat
     while (myfile.good()) {
@@ -34,8 +35,16 @@ int main() {
 
         //create class with data obtained from point.dat
         Student Travis(ID, cla, ola, quiz, homework, exam, bonus);
-        cout << "\nStudent ID:";
-        cout << Travis.getID() << " " << Travis.getScore(Student::QUIZ) << endl;
+        cout << "\t";
+        cout << Travis.getID() << "\t";
+        cout << Travis.getScore(Student::ScoreType(cla)) << " ";
+        cout << Travis.getScore(Student::ScoreType(ola)) << " ";
+        cout << Travis.getScore(Student::ScoreType(quiz)) << " ";
+        cout << Travis.getScore(Student::ScoreType(homework)) << " ";
+        cout << Travis.getScore(Student::ScoreType(exam)) << " ";
+        cout << Travis.getScore(Student::ScoreType(bonus)) << " ";
+
+        cout << endl << endl;
 
         studentIndex++;
     };
