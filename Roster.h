@@ -33,7 +33,7 @@ public:
 	// post-condition:
 	//		m_students contains student information read from the file
 	//		m_studentNum is the number of students read from the file
-	void readStudentRecord( std::string );
+	static void readStudentRecord( void );
 
 	int getStudentNum(void) const;
 	static void setStudentNum(int);

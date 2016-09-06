@@ -4,9 +4,9 @@
 
 #include "Student.h"
 #include <iostream>
-#include <string>
 
 using namespace std;
+
 
 Student::Student(string m_id, int CLA, int OLA, int QUIZ, int HOMEWORK, int EXAM, int BONUS)
     : m_id(m_id),
