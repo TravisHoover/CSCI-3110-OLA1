@@ -1,2 +1,2 @@
-PURPOSE: 
-•	learn to work with multiple classes
+## PURPOSE: 
+    To practice working with multiple classes.
