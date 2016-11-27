@@ -1,6 +1,6 @@
 
-#ifndef __CSCI3110_ROSTER__
-#define __CSCI3110_ROSTER__
+#ifndef ROSTER
+#define ROSTER
 
 #include <string>
 #include <stdexcept>
