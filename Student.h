@@ -1,6 +1,6 @@
 
-#ifndef __CSCI3110_STUDENT__
-#define __CSCI3110_STUDENT__
+#ifndef STUDENT
+#define STUDENT
 
 #include <string>
 #include <stdexcept>
